@@ -1,0 +1,39 @@
+﻿<h2>List of Product To Follow</h2>
+<div class='table-bordered'>
+    <table class='table'>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>HomepageUrl</th>
+            <th>PlayStoreUrl</th>
+            <th>AppStoreUrl</th>
+            <th>ProductPlatform</th>
+            <th>Follow/Unfollow</th>
+        </tr>
+        <tr *ngFor='let product of products'>
+            <td>
+                {{product.Name}}
+            </td>
+            <td>
+                {{product.Description}}
+            </td>
+            <td>
+                {{product.HomepageUrl}}
+            </td>
+            <td>
+                {{product.PlayStoreUrl}}
+            </td>
+            <td>
+                {{product.AppStoreUrl}}
+            </td>
+            <td>
+                {{productplatform[product.ProductPlatform]}}
+            </td>
+            <td>
+                <button [hidden]="hidebutton[product.Id]" (click)="Follow(product)">Follow</button>
+                <button [hidden]="!hidebutton[product.Id]" (click)="Unfollow(product)">Unfollow</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<br />
