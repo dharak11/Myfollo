@@ -14,5 +14,5 @@ There are 3 Users For MyFollow Application,Admin That is Own Created By system.E
 
 -Admin Can Approve Or Reject The Request of Enduser to Become Owner.
 
--Product Owners Can Add Products Edit And Delete Products.Owners Can Also Follow Products.
+-Product Owners Can Add Products Edit And Delete Products.Owners Can Also Follow Products.Owners Can Update Product Versions,It Can be seen By Followers of That Product. 
 
